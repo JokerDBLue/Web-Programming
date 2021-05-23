@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ro">
+	<head>
+		<title>Stiri date in nestire</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	</head>
+	<body bgcolor="#d9d9d9">
+		<div id="header">
+			<div id="logo">
+				<a href="ultimeleStiri.html" target="_blank">
+				<img src="logo.png" alt="Stiri date in nestire" width="150" height="150" title="Logo pentru site">
+				</a>
+			</div>
+			<div id="meniu" align="right">
+				<a href="ultimeleStiri.html">Acasa</a>
+				<label for="stiri">Tipuri de stiri:</label>
+				<select name="Tipuri de stiri" id="stiri">
+					<option value="toate" selected>Toate</option>
+					<option value="sport">Sport</option>
+					<option value="politca">Politica</option>
+					<option value="false">Stiri false</option>
+					<option value="amuzante">Amuzante</option>
+				</select>
+				<a href="ultimeleStiri.html">Ultimele stiri</a>
+				<a href="index.html">Logout</a>
+			</div>
+		</div>
+		<div id="content">
+			<h1>Scrie o stire</h1>
+			<img src="scriitor.png" alt="Masina de scris" width="500" height="600" align="left">
+			<form action="/action_page.php" method="post">
+				<fieldset>
+					<legend>Formular de scris stire:</legend>
+					<label>Titlu: </label><input type="text" name="text" value="Introduceti numele" maxlength="20" size="50"><br>
+					<label>Continut:</label><br><br>
+					<textarea name="textlung" cols="120" rows="20"></textarea><br>
+					<label>Tip stire: </label>
+					<input type="radio" checked name="tipStire" value="0"> Sport
+					<input type="radio" name="tipStire" value="1"> Politica
+					<input type="radio" name="tipStire" value="2"> Stire falsa
+					<input type="radio" name="tipStire" value="3"> Stire amuzanta
+					<br>
+					<table border align="center">
+					  <tr>
+						<th></th>
+						<th>Sport</th>
+						<th>Politica</th>
+						<th>Stire falsa</th>
+						<th>Stire amuzanta</th>
+					  </tr>
+					  <tr>
+						<td>Trebuie aprobata</td>
+						<td>DA</td>
+						<td>DA</td>
+						<td>NU</td>
+						<td>DA</td>
+					  </tr>
+					  <tr>
+						<td>
+							Poate sa fie roportata
+							<table border>
+								<tr>
+									<th>
+										In caz de informatie falsa
+									</th>
+								</tr>
+								<tr>
+									<th>
+										In caz de informatie adevarata
+									</th>
+								</tr>
+							</table>
+						</td>
+						<td>
+							Poate sa fie roportata
+							<table border>
+								<tr>
+									<th>
+										DA
+									</th>
+								</tr>
+								<tr>
+									<th>
+										NU
+									</th>
+								</tr>
+							</table>
+						</td>
+						<td>
+							Poate sa fie roportata
+							<table border>
+								<tr>
+									<th>
+										DA
+									</th>
+								</tr>
+								<tr>
+									<th>
+										NU
+									</th>
+								</tr>
+							</table>
+						</td>
+						<td>
+							Poate sa fie roportata
+							<table border>
+								<tr>
+									<th>
+										NU
+									</th>
+								</tr>
+								<tr>
+									<th>
+										DA
+									</th>
+								</tr>
+							</table>
+						</td>
+						<td>
+							Poate sa fie roportata
+							<table border>
+								<tr>
+									<th>
+										DA
+									</th>
+								</tr>
+								<tr>
+									<th>
+										DA
+									</th>
+								</tr>
+							</table>
+						</td>
+					  </tr>
+					  <tr>
+						<td>Cerinte suplimentare</td>
+						<td valign="bottom" colspan="2">
+							<ol start="1" type="A">
+								<li>Trebuie sa contina: <ul>
+									<li>Adevar maxim</li>
+									<li>Fara satira sau sarcasm</li>
+								</ul></li>
+							  <li>Trebuie sa fie o parodie a realitatii</li>
+							</ol>
+						</td>
+						<td valign="bottom">
+							<ol start="1" type="A">
+								<li>Trebuie sa contina: <ul>
+									<li>Adevar minim</li>
+									<li>Satira si sarcasm</li>
+								</ul></li>
+							  <li>Trebuie sa fie o parodie a realitatii</li>
+							</ol>
+						</td>
+						<td>
+							Sa fie amuzanta
+						</td>
+					  </tr>
+					</table>
+					<input type="submit" value="Submit">
+				</fieldset>
+			</form>
+		</div>
+		<div id="footer">
+			<p>
+				<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.scs.ubbcluj.ro%2F~lmar1989%2Flab1%2Fhtml4%2FscrieStire.html" target="_blank">
+				<img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88">
+				</a>
+			</p>
+		</div>
+	</body>
+</html>
